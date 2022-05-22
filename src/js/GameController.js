@@ -1,3 +1,5 @@
+import GamePlay from "./GamePlay.js"
+
 export default class GameController {
   constructor(gamePlay, stateService) {
     this.gamePlay = gamePlay;
@@ -5,7 +7,7 @@ export default class GameController {
   }
 
   init() {
-    gamePlay.drawUi('prairie');
+    this.gamePlay.drawUi("prairie");
     // TODO: add event listeners to gamePlay events
     // TODO: load saved stated from stateService
   }
